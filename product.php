@@ -48,10 +48,11 @@ function addProduct ($num, $categoryId, $attributeSetId){
             $product->setName(phpsum(5, 20));
             $product->setWeight(rand(1111, 9999));
             $product->setStatus(1);
-            $product->setTaxClassId(rand(1,4));
+            $tax = array(0, 2, 4);
+            $product->setTaxClassId($tax[rand(0,2)]);
             $product->setVisibility(4);
             $product->setCountryOfManufacture(4);
-            $product->setPrice(rand(1000,10000));
+            $product->setPrice(rand(100,10000));
             $product->setCost(rand(500,1000));
             $product->setMetaTitle(phpsum(10, 100));
             $product->setMetaKeyword(phpsum(100, 300));
