@@ -14,3 +14,4 @@ php product.php [num of product] [category id] [attribute set id]
 
 genereate 10 product to category id 3 and attribute id 4
 php product.php 10 3 4
+
